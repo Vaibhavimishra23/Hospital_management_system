@@ -18,10 +18,102 @@ for a Hospital Management System.
 ## Tools Used
 - MySQL
 - XAMPP
-- phpMyAdmin
 
 ## How to Run
 1. Open XAMPP and start Apache & MySQL
 2. Open phpMyAdmin
 3. Create database: hospital_management
 4. Import the SQL file from Database folder
+
+## Entities and attributes used:
+
+1. Department
+Attributes:
+dept_id (Primary Key)
+dept_name
+HOD
+location-
+    building
+    floor
+    room_no
+phone_no (multivalued)
+
+2. Doctor
+Attributes:
+doctor_id (Primary Key)
+Name-
+   f_name
+   m_name
+   l_name
+specialisation
+experience
+dept_id (Foreign Key)
+phone_no (multivalued)
+
+3. Patient
+Attributes:
+patient_id (Primary Key)
+Name-
+  f_name
+  m_name
+  l_name
+age
+gender
+phone_no (multivalued)
+
+4. Appointment
+Attributes:
+apt_id (Primary Key)
+apt_date
+apt_time
+doctor_id (Foreign Key)
+patient_id (Foreign Key)
+
+5. Prescription
+Attributes:
+presc_id (Primary Key)
+issued_date
+doctor_id (Foreign Key)
+patient_id (Foreign Key)
+apt_id (Foreign Key)
+medicine (multivalued)
+
+## Relationships and Cardinality
+Department – Doctor
+One department can have many doctors
+(1 : N)
+
+Doctor – Appointment
+One doctor can conduct many appointments
+(1 : N)
+
+Patient – Appointment
+One patient can book many appointments
+(1 : N)
+
+Doctor – Prescription
+One doctor can issue many prescriptions
+(1 : N)
+
+Patient – Prescription
+One patient can receive many prescriptions
+(1 : N)
+
+Prescription – Medicine
+One prescription can contain many medicines
+(1 : N, multivalued attribute)
+
+## Tables Created in Database
+department
+department_contact
+doctor
+doctor_contact
+patient
+patient_phone
+appointment
+prescription
+prescription_medicine
+
+
+
+
