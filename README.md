@@ -36,6 +36,7 @@ for a Hospital Management System.
 
 ### 2. Doctor
 - **doctor_id** (Primary Key)
+- Name-
 - f_name
 - m_name
 - l_name
@@ -46,6 +47,7 @@ for a Hospital Management System.
 
 ### 3. Patient
 - **patient_id** (Primary Key)
+- Name-
 - f_name
 - m_name
 - l_name
