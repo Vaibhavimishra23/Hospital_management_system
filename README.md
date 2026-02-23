@@ -25,58 +25,49 @@ for a Hospital Management System.
 3. Create database: hospital_management
 4. Import the SQL file from Database folder
 
-## Entities and attributes used:
+## Entities and Attributes Used
 
-1. Department
-Attributes:
-dept_id (Primary Key)
-dept_name
-HOD
-location-
-    building
-    floor
-    room_no
-phone_no (multivalued)
+### 1. Department
+- **dept_id** (Primary Key)
+- dept_name
+- HOD
+- location (building, floor, room_no)
+- phone_no (multivalued)
 
-2. Doctor
-Attributes:
-doctor_id (Primary Key)
-Name-
-   f_name
-   m_name
-   l_name
-specialisation
-experience
-dept_id (Foreign Key)
-phone_no (multivalued)
+### 2. Doctor
+- **doctor_id** (Primary Key)
+- f_name
+- m_name
+- l_name
+- specialisation
+- experience
+- dept_id (Foreign Key)
+- phone_no (multivalued)
 
-3. Patient
-Attributes:
-patient_id (Primary Key)
-Name-
-  f_name
-  m_name
-  l_name
-age
-gender
-phone_no (multivalued)
+### 3. Patient
+- **patient_id** (Primary Key)
+- f_name
+- m_name
+- l_name
+- age
+- gender
+- phone_no (multivalued)
 
-4. Appointment
-Attributes:
-apt_id (Primary Key)
-apt_date
-apt_time
-doctor_id (Foreign Key)
-patient_id (Foreign Key)
+### 4. Appointment
+- **apt_id** (Primary Key)
+- apt_date
+- apt_time
+- doctor_id (Foreign Key)
+- patient_id (Foreign Key)
 
-5. Prescription
-Attributes:
-presc_id (Primary Key)
-issued_date
-doctor_id (Foreign Key)
-patient_id (Foreign Key)
-apt_id (Foreign Key)
-medicine (multivalued)
+### 5. Prescription
+- **presc_id** (Primary Key)
+- issued_date
+- doctor_id (Foreign Key)
+- patient_id (Foreign Key)
+- apt_id (Foreign Key)
+- medicine (multivalued)
+
 
 ## Relationships and Cardinality
 Department – Doctor
@@ -104,15 +95,16 @@ One prescription can contain many medicines
 (1 : N, multivalued attribute)
 
 ## Tables Created in Database
-department
-department_contact
-doctor
-doctor_contact
-patient
-patient_phone
-appointment
-prescription
-prescription_medicine
+
+- department  
+- department_contact  
+- doctor  
+- doctor_contact  
+- patient  
+- patient_phone  
+- appointment  
+- prescription  
+- prescription_medicine  
 
 
 
