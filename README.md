@@ -1,6 +1,12 @@
 # Hospital_management_system
 ER diagram and MySQL table conversion using XAMPP
 
+# Team members:
+Vaibhavi Mishra- 2410030131
+Abhishek kumar sharma- 2410030395
+Devashish yadav- 2410030125
+Shreya srivastava- 2410030334
+
 ## Description
 This project contains an ER diagram and MySQL table conversion
 for a Hospital Management System.
